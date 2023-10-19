@@ -1,11 +1,23 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-   <>
-   <Navbar title = "My First react App" />
-   </>
+    <>
+      <Router>
+        <Navbar title="My First react App" />
+        <Routes>
+          <Route path='/' element={<Home />} />  {/* Updated to use element prop */}
+          <Route path='/about' element={<About />} />  {/* Updated to use element prop */}
+          <Route path='/contact' element={<Contact />} />  {/* Updated to use element prop */}
+        </Routes>
+      </Router>
+    </>
   );
 }
+
 export default App;
