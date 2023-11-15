@@ -1,12 +1,24 @@
 // src/pages/About.js
-import React from 'react';
+import ListGroup from "../Components/ListGroup";
+import React from "react";
 
 function About(props) {
+  const countries = ["PAK", "IND", "SIRI", "AUS", "NZ", "SA", "AFG"];
+  const heading = "Country Name";
+  // const countries = [];
+  // Function to be called when an item is selected
+  const handleItemSelected = (item) => {
+    console.log(item);
+  };
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>{props.page} </h1>
       <p>This is the about page of my first React app.</p>
-      <h2>This is the {props.page} Page.</h2>
+      <ListGroup
+        heading={heading}
+        items={countries}
+        onItemSelected={handleItemSelected}
+      />
     </div>
   );
 }

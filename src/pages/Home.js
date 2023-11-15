@@ -1,26 +1,28 @@
 // src/pages/Home.js
-import React from "react";
 
+import ListGroup from "../Components/ListGroup";
 import "./page.css";
-function Home(props) {
-  return (
-      <div>
-        <h1> I am main Page </h1>
-        <h2>Home Page</h2>
-        <p>Welcome to the home page of my first React app!</p>
-        <h2>This is the {props.page} Page.</h2>
-      </div>
 
-      
+function Home(props) {
+  const familymembers = ["aziz", "umair", "Zubair", "Uzair", "Usman"];
+
+  return (
+    <div>
+      <h1>{props.page} </h1>
+      <p>Welcome to my first React app!</p>
+      <br />
+      <ListGroup heading="Family Members" items={familymembers} />
+    </div>
   );
 }
 function Defaultpage(props) {
-  return(
+  const familymember = [];
+  return (
     <>
-    <h1>Main Page: {props.page}  </h1>
-    <Home page = {props.page} />
-     </>
-  )
+      <Home page={props.page} />
+      <ListGroup heading="Family Members" items={familymember} />
+    </>
+  );
 }
-export { Home, Defaultpage };
 
+export { Home, Defaultpage };
