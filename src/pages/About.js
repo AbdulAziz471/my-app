@@ -14,6 +14,7 @@ function About(props) {
       <p>This is the about page of my first React app.</p>
       <ListGroup heading={heading} items={countries} />
       <ToDo />
+      <ToDo />
     </div>
   );
 }

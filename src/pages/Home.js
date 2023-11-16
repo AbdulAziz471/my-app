@@ -2,6 +2,7 @@
 
 import ListGroup from "../Components/ListGroup";
 import "./page.css";
+import TikTakGame from "../Components/TikTaKGame";
 
 function Home(props) {
   const familymembers = ["aziz", "umair", "Zubair", "Uzair", "Usman"];
@@ -20,7 +21,7 @@ function Defaultpage(props) {
   return (
     <>
       <Home page={props.page} />
-      <ListGroup heading="Family Members" items={familymember} />
+      <TikTakGame />
     </>
   );
 }
