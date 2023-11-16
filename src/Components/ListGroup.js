@@ -19,6 +19,7 @@ export default function ListGroup(props) {
             key={item}
             onClick={() => {
               setCount(index);
+              console.log(item);
             }}
           >
             {item}
