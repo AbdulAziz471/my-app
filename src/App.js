@@ -1,9 +1,10 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Home, Defaultpage } from "./pages/Home";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Default from "./pages/Default";
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
       <Router>
         <Navbar title="My First react App" />
         <Routes>
-          <Route path="/" element={<Home page="Default Page" />} />
-          <Route path="/home" element={<Defaultpage page="Home" />} />
+          <Route path="/" element={<Default page="Default" />} />
+          <Route path="/home" element={<Home page="Home" />} />
           <Route path="/about" element={<About page="About" />} />
           <Route path="/contact" element={<Contact page="Contact" />} />
         </Routes>
