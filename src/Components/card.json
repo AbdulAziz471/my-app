@@ -1,0 +1,66 @@
+[
+    {
+      "title": "Roll 5",
+      "description": "Description for Card 1.",
+      "image": "dims1.jpg",
+      "catagrey" : "game"
+    },
+    {
+      "title": "Cribbage",
+      "description": "Description for Card 2.",
+      "image": "dims2.jpg",
+      "catagrey" : "movie"
+    },
+    {
+        "title": "The Daily Sudoko",
+        "description": "Description for Card 2.",
+        "image": "dims3.jpg",
+        "catagrey" : "game"
+    },
+    {
+        "title": "The Daily Diagonal Sudoko",
+        "description": "Description for Card 2.",
+        "image": "dims4.jpg",
+        "catagrey" : "movie"
+    },
+    {
+        "title": "Crazy's 8",
+        "description": "Description for Card 2.",
+        "image": "dims5.jpg",
+        "catagrey" : "game"
+    },
+    {
+        "title": "Dominoes",
+        "description": "Description for Card 2.",
+        "image": "dims6.jpg",
+        "catagrey" : "movie"
+    },
+    {
+        "title": "Flip Out",
+        "description": "Description for Card 2.",
+        "image": "dims7.jpg",
+        "catagrey" : "game"
+    }
+    ,
+    {
+        "title": "Letter Garden",
+        "description": "Description for Card 2.",
+        "image": "dims8.jpg",
+        "catagrey" : "movie"
+    },
+    {
+        "title": "Mahgon",
+        "description": "Description for Card 2.",
+        "image": "dims9.jpg",
+        "catagrey" : "game"
+    },
+    {
+        "title": "2048",
+        "description": "Description for Card 2.",
+        "image": "dims10.jpg",
+        "catagrey" : "movie"
+    }
+    
+
+
+  ]

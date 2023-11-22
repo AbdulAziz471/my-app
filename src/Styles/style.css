@@ -1,0 +1,24 @@
+.card {
+    width: 18rem;
+}
+
+.Dashboard {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.panal {
+    display: flex;
+}
+
+.verticle-navbar {
+
+    width: 20%;
+}
+
+.verticle-nav {
+    display: flex;
+    justify-content: space-between;
+}

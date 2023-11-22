@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";  // Import NavLink from react-router-dom
+import { NavLink } from "react-router-dom"; // Import NavLink from react-router-dom
 
 export default function Navbar(props) {
   return (
@@ -22,32 +22,34 @@ export default function Navbar(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" exact to="/home">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                exact
+                to="/home"
+              >
                 HOME
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" to="/about">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                to="/about"
+              >
                 ABOUT
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" to="/contact">
+              <NavLink
+                className="nav-link"
+                activeClassName="active"
+                to="/contact"
+              >
                 CONTACT
               </NavLink>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
