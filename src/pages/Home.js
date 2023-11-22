@@ -1,21 +1,24 @@
-// src/pages/Home.js
 import { useState } from "react";
 import React from "react";
 import Card from "../Components/Card";
+
 import "../Styles/style.css";
 import VerticleNav from "../Components/verticle-nav";
 import cardsdata from "../Components/card.json";
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("all");
-
+  const [searchQuery, setSearchQuery] = useState("");
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
 
-  const filteredCards =
-    selectedCategory === "all"
-      ? cardsdata
-      : cardsdata.filter((card) => card.catagrey === selectedCategory);
+  const filteredCards = cardsdata
+    .filter(
+      (card) => selectedCategory === "all" || card.catagrey === selectedCategory
+    )
+    .filter((card) =>
+      card.title.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
   return (
     <>
@@ -24,6 +27,8 @@ export default function Home() {
         <VerticleNav
           selectedCategory={selectedCategory}
           onCategoryChange={handleCategoryChange}
+          onSearchChange={setSearchQuery}
+          searchQuery={searchQuery}
         />
       </div>
       <div className="Dashboard">

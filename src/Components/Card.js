@@ -1,3 +1,5 @@
+import SubmitButton from "./SubmitButton";
+
 export default function Card(props) {
   const imagePath = require(`../games/${props.image}`);
   return (
@@ -7,9 +9,7 @@ export default function Card(props) {
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
           <p className="card-text">{props.description}</p>
-          <a href="/" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <SubmitButton />
         </div>
       </div>
     </>
