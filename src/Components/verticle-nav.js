@@ -1,18 +1,13 @@
 import React from "react";
 // import { useState } from "react";
 
-export default function VerticleNav({
-  selectedCategory,
-  onCategoryChange,
-  onSearchChange,
-  searchQuery,
-}) {
+export default function VerticleNav({ selectedCategory, onCategoryChange }) {
   return (
     <>
       <div className="verticle-nav">
         <ul className="nav nav-tabs">
           <li
-            className={`nav-item ${selectedCategory === "all" ? "active" : ""}`}
+            className={`nav-item ${selectedCategory == "all" ? "active" : ""}`}
             onClick={() => onCategoryChange("all")}
           >
             <a className="nav-link" href="#">
@@ -40,19 +35,6 @@ export default function VerticleNav({
             </a>
           </li>
         </ul>
-        <form className="d-flex" role="search">
-          <input
-            className="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-            value={searchQuery}
-            onChange={(e) => onSearchChange(e.target.value)}
-          />
-          <button className="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form>
       </div>
     </>
   );
