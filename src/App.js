@@ -5,7 +5,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Default from "./pages/Default";
-import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -17,10 +16,8 @@ function App() {
           <Route path="/home" element={<Home page="Home" />} />
           <Route path="/about" element={<About page="About" />} />
           <Route path="/contact" element={<Contact page="Contact" />} />
-          <Route path="/Dashboard" element={<Dashboard page="Dashboard" />} />
         </Routes>
       </Router>
-      <module1 />
     </>
   );
 }

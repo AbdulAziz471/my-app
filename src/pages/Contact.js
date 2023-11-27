@@ -1,13 +1,14 @@
 import React from "react";
 import FormValidation from "./FormValidation";
 import "./page.css";
+import TestApi from "../Components/TestApi";
 function Contact(props) {
   return (
     <>
       <div>
         <h1>{props.page}</h1>
-        <p>If you have any questions, feel free to reach out!</p>
       </div>
+      <TestApi />
       <div className="bd-example">
         <form className="needs-validation" novalidate>
           <div className="form-row">
