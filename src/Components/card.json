@@ -3,19 +3,22 @@
       "title": "Roll 5",
       "description": "Description for Card 1.",
       "image": "dims1.jpg",
-      "catagrey" : "game"
+      "catagrey" : "game",
+      "subcategory": "funny"
     },
     {
       "title": "Cribbage",
       "description": "Description for Card 2.",
       "image": "dims2.jpg",
       "catagrey" : "movie"
+      
     },
     {
         "title": "The Daily Sudoko",
         "description": "Description for Card 2.",
         "image": "dims3.jpg",
-        "catagrey" : "game"
+        "catagrey" : "game",
+        "subcategory": "funny"
     },
     {
         "title": "The Daily Diagonal Sudoko",
@@ -27,7 +30,8 @@
         "title": "Crazy's 8",
         "description": "Description for Card 2.",
         "image": "dims5.jpg",
-        "catagrey" : "game"
+        "catagrey" : "game",
+        "subcategory": "Adventure"
     },
     {
         "title": "Dominoes",
@@ -39,7 +43,8 @@
         "title": "Flip Out",
         "description": "Description for Card 2.",
         "image": "dims7.jpg",
-        "catagrey" : "game"
+        "catagrey" : "game",
+        "subcategory": "Card"
     }
     ,
     {

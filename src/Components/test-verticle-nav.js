@@ -50,6 +50,48 @@ export default function TestVerticleNav({
             Movies
           </a>
         </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenu2"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Games Catagroies
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <button
+              type="button"
+              className={`dropdown-item ${
+                selectedCategory == "funny" ? "active" : ""
+              }`}
+              onClick={() => onCategoryChange("funny")}
+            >
+              Funny
+            </button>
+
+            <button
+              type="button"
+              className={`dropdown-item ${
+                selectedCategory == "Adventure" ? "active" : ""
+              }`}
+              onClick={() => onCategoryChange("Adventure")}
+            >
+              Adventure
+            </button>
+            <button
+              type="button"
+              className={`dropdown-item ${
+                selectedCategory == "Card" ? "active" : ""
+              }`}
+              onClick={() => onCategoryChange("Card")}
+            >
+              Card
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -14,7 +14,10 @@ export default function Home() {
   };
   const filteredCards = cardsdata
     .filter(
-      (card) => selectedCategory === "all" || card.catagrey === selectedCategory
+      (card) =>
+        selectedCategory === "all" ||
+        card.catagrey === selectedCategory ||
+        card.subcategory === selectedCategory
     )
     .filter((card) =>
       card.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -31,12 +34,20 @@ export default function Home() {
           selectedCategory={selectedCategory}
           onCategoryChange={handleCategoryChange}
         />
-        <div className="Dashboard">
-          {filteredCards.map((card, index) => (
-            <div key={index}>
-              <Card {...card} />
+        <div>
+          {selectedCategory !== "all" && (
+            <div>
+              <h2>{selectedCategory.toUpperCase()}</h2>
             </div>
-          ))}
+          )}
+
+          <div className="Dashboard">
+            {filteredCards.map((card, index) => (
+              <div key={index}>
+                <Card {...card} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
